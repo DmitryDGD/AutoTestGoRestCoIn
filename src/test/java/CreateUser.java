@@ -14,6 +14,11 @@ import static org.testng.Assert.assertEquals;
 
 public class CreateUser {
 
+    // создаём переменные для хранения ID, name, email созданного пользователя. (Для того чтобы сделать PUT запрос)
+    @Getter public String createdUserID;
+    @Getter public String createdUserName;
+    @Getter public String createdUserEmail;
+
     final String baseUri = "https://gorest.co.in/public/v1/users";
     final String bearerToken = "cc5a426bdba401ebf3cff34c9d2fee87bfeffb5b38e3fd7b4ede627ae9ea43cc";
 
@@ -22,10 +27,7 @@ public class CreateUser {
     SimpleDateFormat formatForDateNow = new SimpleDateFormat("MM.dd.hh.mm.ss");
     private final String currentDate = formatForDateNow.format(dateNow);
 
-    // создаём переменные для хранения ID, name, email созданного пользователя. (Для того чтобы сделать PUT запрос)
-    @Getter public String createdUserID;
-    @Getter public String createdUserName;
-    @Getter public String createdUserEmail;
+
 
 
 

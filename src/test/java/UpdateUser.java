@@ -10,7 +10,7 @@ import static org.testng.Assert.assertEquals;
 
 public class UpdateUser {
 
-    // получаем ID созданного пета из CreatePet
+    // получаем ID созданного юзера из CreateUser
     CreateUser createUser = new CreateUser();
     String createdUserID = createUser.getCreatedUserID();
     String createdUserName = createUser.getCreatedUserName();
