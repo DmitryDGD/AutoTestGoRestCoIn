@@ -12,6 +12,8 @@ public class UpdateUser {
 
     // получаем ID созданного юзера из CreateUser
     CreateUser createUser = new CreateUser();
+
+
     String createdUserID = createUser.getCreatedUserID();
     String createdUserName = createUser.getCreatedUserName();
     String createdUserEmail = createUser.getCreatedUserEmail();

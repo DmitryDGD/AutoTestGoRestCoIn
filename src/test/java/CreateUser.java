@@ -27,14 +27,8 @@ public class CreateUser {
     SimpleDateFormat formatForDateNow = new SimpleDateFormat("MM.dd.hh.mm.ss");
     private final String currentDate = formatForDateNow.format(dateNow);
 
-
-
-
-
-
     // создаём объект класса POJO.UserData для сериализации в json
     UserData userData = new UserData();
-
 
     // POST запрос создание пользователя
     @Test(priority = 1)
@@ -111,7 +105,6 @@ public class CreateUser {
 
 
     }
-
 
 
 }
